@@ -1,0 +1,582 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    background: lightblue;
+}
+
+header.masthead {
+    padding-top: calc(6rem + 72px);
+    padding-bottom: 6rem;
+}
+
+header.masthead h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+header.masthead h2 {
+    font-size: 1.3rem;
+    font-family: 'Lato';
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: calc(6rem + 106px);
+        padding-bottom: 6rem;
+    }
+    header.masthead h1 {
+        font-size: 4.75em;
+        line-height: 4rem;
+    }
+    header.masthead h2 {
+        font-size: 1.75em;
+    }
+}
+
+.haut3 {
+    background: lightblue;
+    width: 25%;
+}
+
+.haut1 {
+    padding: 20px;
+    width: calc(25% - 40px);
+    overflow: hidden;
+}
+
+.haut1 img {
+    width: 100%;
+    transition: 1s;
+}
+
+.haut1 img:hover {
+    transform: scale(1.5);
+}
+
+header .haut2 {
+    background: lightblue;
+    width: 50%;
+}
+
+nav {
+    background: lightblue;
+    padding: 15px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a {
+    color: aqua;
+    background: darkblue;
+    margin: 15px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+nav ul input {
+    width: calc(50% + 15px);
+}
+
+.bloc {
+    display: flex;
+}
+
+.bloc1 {
+    background: lightblue;
+    width: 25%;
+    height: 145px;
+}
+
+.bloc2 {
+    background: lightblue;
+    height: 145px;
+    width: 75%;
+    display: flex;
+}
+
+.bloc2 a {
+    width: 24%;
+}
+#demande{
+    min-height: 100vh;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all{
+    background: lightblue;
+    max-width: 600px;
+
+}
+.bloc5 {
+    background: lightblue;
+    width:25%;
+    height: 1000px;
+    text-align: center;
+    
+}
+.bloc6 {
+    background: lightblue;
+    width:100%;
+    height: 1000px;
+    text-align: center;
+    
+}
+
+
+.bloc4 {
+    background: lightblue;
+    width: 50%;
+    height: 1000px;
+    text-align: center;
+    
+}
+
+footer {
+    height: 80px;
+    background: lightblue;
+}
+
+/*Rajout*/
+
+.msgFoot {
+    font-size: 9px;
+}
+
+.seLog {
+    display: inline-block;
+    margin-top: 62px;
+    margin-bottom: 63px;
+    height: auto;
+    border: 2px solid #00B9E4;
+    width: 315px !important;
+    margin-left: 5px;
+}
+
+.divLog {
+    background-color: #391909;
+    color: lightblue;
+}
+
+img {
+    max-width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+}
+
+body {
+    background: #ccc;
+}
+
+main {
+    background: white;
+    margin: 0;
+    width: 1000px;
+}
+
+section {
+    padding: 20px;
+}
+
+span {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 50px;
+    font-weight: bold;
+    background: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: #54D17A;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+
+/* Mettre le site en Responsive */
+
+@media ( max-width:1000px) {
+    nav {
+        max-width: 1000px;
+    }
+    .bloc1 {
+        max-width: 25%;
+    }
+    .bloc2 {
+        max-width: 75%;
+    }
+    .bloc4 {
+        max-width: 50%;
+    }
+    .gallerycontainer {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        max-width: 1000px;
+    }
+    .bloc1 {
+        max-width: 25%;
+    }
+    .bloc2 {
+        max-width: 75%;
+    }
+    .bloc4 {
+        max-width: 50%;
+    }
+    .gallerycontainer {
+        max-width: 100%;
+    }
+}
+
+/* Fin mettre le site en Responsive */
+
+/* Début slideshow */
+
+
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    border: 5px solid black;
+}
+
+.carousel.slide {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+#previousBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+html, body {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+.galleryContainer {
+    margin-right: 500px;
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    margin: auto;
+    user-select: none; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.galleryContainer .slideShowContainer {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+
+.galleryContainer .slideShowContainer .imageHolder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.galleryContainer .slideShowContainer .imageHolder img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.galleryContainer .slideShowContainer .leftArrow, .galleryContainer .slideShowContainer .rightArrow {
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.galleryContainer .slideShowContainer .rightArrow {
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.galleryContainer .slideShowContainer .leftArrow:hover, .galleryContainer .slideShowContainer .rightArrow:hover {
+    background: #000000a8;
+    cursor: pointer;
+}
+
+.galleryContainer .arrowRight {
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.galleryContainer #dotsContainer {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.galleryContainer #dotsContainer .dots {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.galleryContainer #dotsContainer .dots:first-child {
+    margin-left: 0;
+}
+
+.galleryContainer #dotsContainer .dots:hover, .galleryContainer #dotsContainer .dots.active {
+    background-color: #717171;
+    ;
+}
+
+.galleryContainer .moveLeftCurrentSlide {
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.galleryContainer .moveLeftNextSlide {
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveLeftCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+    to {
+        margin-left: -100%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeftNext {
+    from {
+        margin-left: 100%;
+        opacity: 1;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+.galleryContainer .moveRightCurrentSlide {
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.galleryContainer .moveRightPrevSlide {
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveRightCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+    to {
+        margin-left: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightPrev {
+    from {
+        margin-left: -100%;
+        opacity: 1;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+
+/* Fin slideshow */
+
+/* Début background couleur du site */
+
+body {
+    background: #1E7FCB;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Fin background couleur du site */
+.contactForm {
+text-align: center;
+display: flex;
+justify-content: center; 
+}
+
+.contactForm form {
+    width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+}
+
+
+.contactForm form td{
+
+    column-span: 2;
+
+}
+
+/* Animation JS */
+
+html,body{
+       width: 100%;
+	   height: 100%;
+}
+
+ body {
+     background: #1E7FCB;
+}
+
+#circle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	width: 150px;
+    height: 150px;	
+}
+
+.loader {
+    width: calc(100% - 0px);
+	height: calc(100% - 0px);
+	border: 8px solid #162534;
+	border-top: 8px solid #09f;
+	border-radius: 50%;
+	animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+100% {transform: rotate(360deg);}
+} 

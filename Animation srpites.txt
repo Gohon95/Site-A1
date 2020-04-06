@@ -1,0 +1,50 @@
+ <script>
+                
+                
+                var width = window.innerWidth,
+                    height = window.innerHeight,
+                    ratio = window.devicePixelRatio;
+                
+                var x = width / 2;
+                r = 40;
+                
+                var sprites = new Image();
+                sprites.onload = animate;
+                sprites.src = "shell.png";
+                
+                
+                var canvas = document.getElementById("canvas"),
+                    context = canvas.getContext("2d");
+                
+                canvas.width = width * ratio;
+                canvas.height = height * ratio;
+                canvas.style.width = width + "px";
+                canvas.style.height = height + "px";
+                context.scale(ratio, ratio);
+                
+                
+                function animate() {
+                    draw();
+                    update();
+                    requestAnimationFrame(animate);
+                }
+                
+                function draw() {
+                    context.clearRect(0, 0, wwidth, height);
+                    draw(x, height);
+                    
+                }
+                
+                function drawShell(x, y) {
+                    var s = r/12;
+                    context.drawImage(sprites, 0, 0, 32, 32, x-16*, y-26*, 32*, 32*);
+                }
+                
+                function update() {
+                    
+                }
+            
+            
+            
+            
+            </script>
